@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/shineon/shipmentNotification",
+      "handler": "shineon.shipmentNotification",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

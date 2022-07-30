@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "name": "store",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "via": "store",
+      "collection": "product"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "orders": {
+      "via": "store",
+      "collection": "order"
+    },
+    "manager": {
+      "via": "store",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "chats": {
+      "collection": "chat",
+      "via": "store"
+    }
+  }
+}

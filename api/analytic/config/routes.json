@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/analytics/getStatsTwelveMonth",
+      "handler": "analytic.getStatsTwelveMonth",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analytics/getStatistics",
+      "handler": "analytic.getStatistics",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analytics",
+      "handler": "analytic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analytics/count",
+      "handler": "analytic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analytics/:id",
+      "handler": "analytic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analytics",
+      "handler": "analytic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/analytics/:id",
+      "handler": "analytic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/analytics/:id",
+      "handler": "analytic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chats",
+  "info": {
+    "name": "chat"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "users": {
+      "via": "chats",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "chat_messages": {
+      "via": "chat",
+      "collection": "chatmessage"
+    },
+    "store": {
+      "via": "chats",
+      "model": "store"
+    }
+  }
+}

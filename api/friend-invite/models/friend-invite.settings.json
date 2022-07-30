@@ -1,0 +1,14 @@
+{
+  "collectionName": "friend_invites",
+  "info": {
+    "name": "friendInvite",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {}
+}

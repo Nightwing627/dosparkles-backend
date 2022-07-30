@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "shineons",
+  "info": {
+    "name": "shineon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "val": {
+      "type": "uid"
+    }
+  }
+}

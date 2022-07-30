@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "orders"
+    },
+    "orderDetails": {
+      "type": "json"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "on_hold",
+        "confirmed",
+        "in_production",
+        "shipped",
+        "cancelled"
+      ],
+      "default": "confirmed"
+    },
+    "paymentToken": {
+      "type": "string"
+    },
+    "refundToken": {
+      "type": "string"
+    },
+    "refunded": {
+      "type": "boolean",
+      "default": false
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "products": {
+      "via": "orders",
+      "collection": "product",
+      "dominant": true
+    },
+    "shipmentDetails": {
+      "type": "json"
+    },
+    "shineonId": {
+      "type": "string"
+    },
+    "cancelReason": {
+      "type": "string"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "store": {
+      "model": "store",
+      "via": "orders"
+    },
+    "rejectedReason": {
+      "type": "text"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "cardToken": {
+      "type": "string"
+    },
+    "chargeToken": {
+      "type": "string"
+    }
+  }
+}

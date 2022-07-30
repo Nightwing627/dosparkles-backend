@@ -1,0 +1,168 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shineonImportId": {
+      "type": "string",
+      "private": false
+    },
+    "store": {
+      "model": "store",
+      "via": "products"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "oldPrice": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "showOldPrice": {
+      "type": "boolean",
+      "default": false
+    },
+    "engraveAvailable": {
+      "type": "boolean"
+    },
+    "properties": {
+      "type": "json"
+    },
+    "engraveOldPrice": {
+      "type": "decimal"
+    },
+    "engravePrice": {
+      "type": "decimal"
+    },
+    "showOldEngravePrice": {
+      "type": "boolean",
+      "default": false
+    },
+    "defaultFinishMaterial": {
+      "type": "string"
+    },
+    "optionalFinishMaterialPrice": {
+      "type": "decimal"
+    },
+    "optionalFinishMaterialEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string"
+    },
+    "orders": {
+      "via": "products",
+      "collection": "order"
+    },
+    "basePrice": {
+      "type": "decimal",
+      "private": true
+    },
+    "uploadsAvailable": {
+      "type": "boolean",
+      "default": false
+    },
+    "sizeOptionsAvailable": {
+      "type": "boolean",
+      "default": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "engraveExample": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "optionalMaterialExample": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "optionalFinishMaterial": {
+      "type": "string"
+    },
+    "shineonIds": {
+      "type": "json"
+    },
+    "new": {
+      "type": "boolean",
+      "default": false
+    },
+    "optionalFinishMaterialOldPrice": {
+      "type": "decimal"
+    },
+    "showOptionalFinishMaterialOldPrice": {
+      "type": "boolean",
+      "default": true
+    },
+    "productDetails": {
+      "type": "richtext"
+    },
+    "deliveryTime": {
+      "type": "richtext"
+    },
+    "orderInList": {
+      "type": "integer"
+    }
+  }
+}

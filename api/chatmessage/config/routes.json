@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chatmessages",
+      "handler": "chatmessage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chatmessages/count",
+      "handler": "chatmessage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chatmessages/:id",
+      "handler": "chatmessage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chatmessages",
+      "handler": "chatmessage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chatmessages/:id",
+      "handler": "chatmessage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chatmessages/:id",
+      "handler": "chatmessage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

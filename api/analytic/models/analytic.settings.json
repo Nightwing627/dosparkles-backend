@@ -1,0 +1,14 @@
+{
+  "collectionName": "analytics",
+  "info": {
+    "name": "analytic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {}
+}

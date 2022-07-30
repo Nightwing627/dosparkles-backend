@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_messages",
+  "info": {
+    "name": "ChatMessage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "chat": {
+      "model": "chat",
+      "via": "chat_messages"
+    },
+    "user": {
+      "via": "chat_messages",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "order": {
+      "model": "order"
+    },
+    "messageType": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "order"
+      ],
+      "default": "text"
+    }
+  }
+}

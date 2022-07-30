@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "name": "notification"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "via": "notifications",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

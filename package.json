@@ -1,0 +1,55 @@
+{
+  "name": "dosparkles-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^27.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "apple-signin-auth": "^1.5.1",
+    "ckeditor-build-with-simple-upload-provider-strapi": "^1.0.7",
+    "content-type-parser": "^1.0.2",
+    "fcm-node": "^1.6.1",
+    "form-data": "^4.0.0",
+    "libphonenumber-js": "^1.9.19",
+    "moment-js": "^1.1.15",
+    "node-fetch": "^2.6.1",
+    "request-promise": "^4.2.6",
+    "strapi": "3.6.3",
+    "strapi-admin": "3.6.3",
+    "strapi-connector-mongoose": "3.6.3",
+    "strapi-middleware-upload-plugin-cache": "^1.1.1",
+    "strapi-plugin-content-manager": "3.6.3",
+    "strapi-plugin-content-type-builder": "3.6.3",
+    "strapi-plugin-documentation": "3.6.3",
+    "strapi-plugin-email": "3.6.3",
+    "strapi-plugin-graphql": "3.6.3",
+    "strapi-plugin-upload": "3.6.3",
+    "strapi-plugin-users-permissions": "3.6.3",
+    "strapi-provider-email-mailgun": "3.6.3",
+    "strapi-provider-email-nodemailer": "^3.6.3",
+    "strapi-utils": "3.6.3",
+    "stripe": "^8.153.0",
+    "twilio": "^3.63.1",
+    "uuid": "^8.3.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "590e3deb-5300-49a4-adce-c08ad98e1a38"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

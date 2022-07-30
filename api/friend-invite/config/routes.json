@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/friend-invites/inviteRequest",
+      "handler": "friend-invite.inviteRequest",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/friend-invites/inviteConfirm",
+      "handler": "friend-invite.inviteConfirm",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friend-invites",
+      "handler": "friend-invite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friend-invites/count",
+      "handler": "friend-invite.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/friend-invites/:id",
+      "handler": "friend-invite.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/friend-invites",
+      "handler": "friend-invite.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/friend-invites/:id",
+      "handler": "friend-invite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/friend-invites/:id",
+      "handler": "friend-invite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

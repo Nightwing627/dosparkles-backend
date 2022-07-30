@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "app_contents",
+  "info": {
+    "name": "appContent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "privacyPolicy": {
+      "type": "richtext"
+    },
+    "termsAndConditions": {
+      "type": "richtext"
+    },
+    "aboutUs": {
+      "type": "richtext"
+    },
+    "termsAndConditionsInvite": {
+      "type": "richtext"
+    }
+  }
+}
